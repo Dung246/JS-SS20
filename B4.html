@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="B4.css" />
+    <title>Employee Management</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Danh sách nhân viên Rikkei</h1>
+    <div class="input-group">
+        <input type="text" id="name" placeholder="Tên nhân viên" />
+        <input type="text" id="position" placeholder="Chức vụ" />
+        <button onclick="addEmployee()">Thêm nhân viên</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Chức vụ</th>
+            </tr>
+        </thead>
+        <tbody id="employeeList"></tbody>
+    </table>
+
+    <div class="pagination">
+        <button onclick="prevPage()">Previous</button>
+        <div id="pagination"></div>
+        <button onclick="nextPage()">Next</button>
+    </div>
+</div>
+
+<script src="./B4.js"></script>
+</body>
+</html>

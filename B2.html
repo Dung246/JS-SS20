@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="B2.css" />
+    <title>Bookmark Manager</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>ADD BOOKMARK</h1>
+        <div id="bookmarksList" class="bookmarks-list"></div>
+        <button class="add-btn" onclick="openModal()">+ Add Bookmark</button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Add Bookmark</h2>
+            <input type="text" id="bookmarkName" placeholder="Website Name">
+            <input type="url" id="bookmarkUrl" placeholder="Website URL">
+            <button onclick="addBookmark()">Save</button>
+        </div>
+    </div>
+
+    <script src="./B2.js"></script>
+</body>
+</html>

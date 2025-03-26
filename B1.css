@@ -1,0 +1,72 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0,1);
+    width: 400px;
+}
+h2{
+    text-align: center;
+    color: #333;
+}
+input{
+    flex: 1;
+    padding: 8px;
+    border: 1px solif #ccc;
+    border-radius: 4px;
+    outline: none;
+    width: 200px;
+}
+button.add-btn{
+    background-color:#0ada2d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 8px;
+    transition: background-color 0.3s;
+    width: 100px;
+}
+button.add-btn:hover{
+    background-color: #ddd;
+}
+.task-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+
+}
+.delete-btn{
+    background-color: #080808;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.delete-btn:hover{
+    background-color: #ec0b0b;
+}
+.edit-btn{
+    background-color: #0f0e0e;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.edit-btn:hover{
+    background-color: aqua;
+}
