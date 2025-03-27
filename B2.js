@@ -16,7 +16,7 @@ function loadBookmarks() {
         const bookmarkItem = document.createElement('div');
         bookmarkItem.className = 'bookmark';
         bookmarkItem.innerHTML = `
-            <span>🔗 <a href="${bookmark.url}" target="_blank">${bookmark.name}</a></span>
+            <span> <a href="${bookmark.url}" target="_blank">${bookmark.name}</a></span>
             <button onclick="deleteBookmark(${index})">&times;</button>
         `;
         bookmarksList.appendChild(bookmarkItem);
